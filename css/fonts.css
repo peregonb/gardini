@@ -1,0 +1,12 @@
+/* font-family: "corsiva"; */
+@font-face {
+	font-family: "corsiva";
+	src: url("../fonts/corsiva.ttf");
+	font-style: normal;
+}
+/* font-family: "minion"; */
+@font-face {
+	font-family: "minion";
+	src: url("../fonts/minion.otf");
+	font-style: normal;
+}
