@@ -21,16 +21,16 @@
     .header-menu ul {
         flex-direction: column;
     }
-    .header-menu {
-width: 100%;
-    position: fixed;
+.header-menu {
+    width: 100%;
+    position: relative;
     left: 0;
     background: #ff4202;
     flex-direction: column;
     top: 75px;
     height: 220px;
     z-index: 9999;
-    }
+}
     .header-menu li {
         line-height: 35px;
         color: white;
