@@ -44,7 +44,6 @@ header {
     z-index: 1000;
     padding: 10px 5px;
     height: auto;
-    overflow: hidden;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     transition: 300ms;
