@@ -5,7 +5,34 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px) {
-
+nav{
+	display: none;
+}
+.hamburger{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-lang {
+width: 75%;
+    padding: 0 5%;
+    justify-content: flex-end;
+}
+.header-menu ul {
+    flex-direction: column;
+}
+nav{
+	position: fixed;
+}
+nav.header-menu {
+    width: 90%;
+    background: #ff4202;
+}
+.header-menu li {
+    line-height: 35px;
+    color:white;
+}
 }
 
 /* Small Devices, Tablets */
