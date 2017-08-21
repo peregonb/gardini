@@ -27,6 +27,7 @@ position: fixed;
     background: #ff4202;
     flex-direction: column;
     top: 75px;
+        height: 220px;
     }
     .header-menu li {
         line-height: 35px;
