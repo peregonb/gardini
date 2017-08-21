@@ -89,7 +89,9 @@ background-image: url(../img/bg1.png);
 	
 }
 .header-brand{
-	width: 12.5%;
+    width: 12.5%;
+    display: flex;
+    align-items: center;
 }
 .header-menu{
 	width: 50%;
