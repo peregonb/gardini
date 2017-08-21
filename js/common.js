@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $('.services-carousel').slick({
+        arrows: false,
+        dots: true
+    });
     $("#top").click(function() {
         $("body, html").animate({
             scrollTop: 0
@@ -25,7 +29,7 @@ $(document).ready(function() {
                     $(this).css("border-bottom", "4px solid transparent");
                 });
 
-                
+
             } else {
                 $('header').removeClass('shrink');
                 $('li').removeClass('white');
@@ -108,3 +112,4 @@ $(window).resize(function() {
         $('.hamburger').removeClass('is-active');
     }
 });
+

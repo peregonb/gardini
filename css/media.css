@@ -39,17 +39,50 @@ width: 100%;
     justify-content: center;
     width: 100%;
     }
+    
 }
 
 
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+	
+	.index-header {
+    color: #da3b38;
+    font-family: "corsiva";
+    font-size: 50px;
+    text-align: center;
+    line-height: 45px;
+}
+.index-description {
+    color: black;
+    font-family: "Open Sans";
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.index-button {
+    font-size: 25px;
+}
+}
 
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (max-width: 479px) {}
+@media only screen and (max-width: 479px) {
+	
+	img.service-candibober {
+    margin-bottom: 25px;
+}
+.service-tile-description {
+    padding: 0px 45px;
+    text-align: center;
+}
+.index-button {
+    padding: 5px 45px;
+}
+}
 
 
 /* Custom, iPhone Retina */

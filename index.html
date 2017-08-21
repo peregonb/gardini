@@ -14,13 +14,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
 </head>
 
-<body>
+<body id="id1">
     <div class="candibober-brand"></div>
     <header>
         <div class="container-header">
@@ -31,10 +33,10 @@
             </div>
             <ul class="header-menu">
                 <li> <a href="#id1">Главная</a></li>
-                <li> <a href="#id1">Услуги</a></li>
-                <li> <a href="#id1">О нас</a></li>
-                <li> <a href="#id1">Портфолио</a></li>
-                <li> <a href="#id1">Контакты</a></li>
+                <li> <a href="#id2">Услуги</a></li>
+                <li> <a href="#id3">О нас</a></li>
+                <li> <a href="#id4">Портфолио</a></li>
+                <li> <a href="#id5">Контакты</a></li>
             </ul>
             <div class="header-lang">
                 <div class="header-lang-block">УКР</div>
@@ -48,11 +50,53 @@
     </header>
     <div class="container-fluid index-bg">
         <div class="container index-content">
+            <div class="index-header">Уют начинается со штор</div>
+            <div class="index-description">Любовь начинается с первого взгляда</div>
+            <a href="#" class="index-button lifted drop-shadow">Заказать шторы</a>
         </div>
     </div>
-    <div class="container-fluid index-bg">
-        <div class="container index-content">
+    <div class="container services-content" id="id2">
+        <div class="services-header">Наши услуги</div>
+        <img class="service-candibober" src="./img/co.svg">
+        <div class="row">
+            <div class="service-tile col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                <img src="./img/s1.png" class="service-tile-img">
+                <div class="service-tile-header">Пошив
+                    <br>Ламбрекенiв</div>
+                <div class="service-tile-description">Создают ощущение легкости и элегантности. Можно отделать кромки на ваш вкус. А так же добавить орнамент.
+                    <br>И выбрать вам понравившуюся ткань.
+                </div>
+            </div>
+            <div class="service-tile col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                <img src="./img/s2.png" class="service-tile-img">
+                <div class="service-tile-header">Пошив
+                    <br>штор i тюля</div>
+                <div class="service-tile-description">Вы получите то, что искали! Богатый выбор тканей и материалов позволит осуществить любую вашу задумку.
+                </div>
+            </div>
+            <div class="service-tile col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                <img src="./img/s3.png" class="service-tile-img">
+                <div class="service-tile-header">Римские и рулонные
+                    <br>шторы</div>
+                <div class="service-tile-description">Уникальность Римских штор делает возможным осуществление любых дизайнерских планов. Её можно закрепить на стене, поместить в нишу, любой оконный проём.</div>
+            </div>
+            <div class="service-tile col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+                <img src="./img/s4.png" class="service-tile-img">
+                <div class="service-tile-header">Шторы
+                    <br>на люверсах</div>
+                <div class="service-tile-description">Максимальная простота и функциональность. все больше людей отдают предпочтение простым, но не менее оригинальным шторам люверсам.</div>
+            </div>
         </div>
+        <div class="services-carousel">
+            <div class="services-carousel-slide">
+                <div class="services-carousel-slide-header">Лучше один раз увидеть, чем сто раз услышать!
+                </div>
+                <div class="services-carousel-slide-description">Новый магазин на Позняках ждет Вас!</div>
+            </div>
+            <div class="services-carousel-slide"></div>
+            <div class="services-carousel-slide"></div>
+        </div>
+        <img class="service-candibober" src="./img/co.svg">
     </div>
     <!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -61,6 +105,7 @@
     <script src="libs/respond/respond.min.js"></script>
     <![endif]-->
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/common.js"></script>
     <!-- Yandex.Metrika counter -->
     <!-- /Yandex.Metrika counter -->
