@@ -34,7 +34,7 @@ body {
             transition: 300ms;
 }
 
-header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -51,7 +51,7 @@ header {
     line-height: 160px;
 }
 
-header.shrink {
+.header.shrink {
     height: 60px;
     line-height: 80px;
     background: #ff4202;
@@ -62,7 +62,7 @@ header.shrink {
     box-shadow: 0 0 4px black;
 }
 
-header {
+.header {
     font-size: 30px;
     font-weight: normal;
     -webkit-transition: all 0.3s;
