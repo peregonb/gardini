@@ -87,6 +87,8 @@ $(window).resize(function() {
     var winwidth = $(window).outerWidth();
     if (winwidth > 991) {
         $('.header-menu').css("display", "flex");
+        $('.header-menu').css("display", "-webkit-box");
+        $('.header-menu').css("display", "-webkit-flex");
         $(".header-menu>li").hover(function() {
             $(this).css("border-bottom", "4px solid black");
         }, function() {
