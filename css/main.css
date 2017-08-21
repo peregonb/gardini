@@ -95,6 +95,7 @@ background-image: url(../img/bg1.png);
 .header-brand{
     width: 12.5%;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
 }
 .header-menu{
@@ -103,6 +104,7 @@ width: 50%;
     line-height: normal;
     margin: 0;
     display: flex;
+    display: -webkit-flex;
     justify-content: space-around;
     align-items: center;
 }
@@ -110,6 +112,7 @@ width: 50%;
 .header-lang{
 	    width: 12.5%;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
 }
@@ -121,6 +124,7 @@ width: 50%;
     line-height: 30px;
     height: 100%;
     display: flex;
+    display: -webkit-flex;
     justify-content: flex-start;
     align-items: center;
     font-style: italic;
@@ -148,6 +152,7 @@ content: "";
 }
 .header-menu ul{
 display: flex;
+display: -webkit-flex;
     padding: 0;
     margin: 0;
     height: 100%;
@@ -156,6 +161,7 @@ display: flex;
 }
 .header-menu li{
 display: inline-flex;
+display: -webkit-inline-flex;
     color: black;
     font-family: "Open Sans";
     font-size: 16px;
