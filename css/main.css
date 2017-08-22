@@ -32,6 +32,7 @@ body {
     -ms-transition: 300ms;
     -o-transition: 300ms;
     transition: 300ms;
+    user-select:none;
 }
 
 header {
@@ -138,6 +139,11 @@ a {
     align-items: center;
     font-style: italic;
     cursor: pointer;
+        -webkit-transition: 300ms;
+       -moz-transition: 300ms;
+        -ms-transition: 300ms;
+         -o-transition: 300ms;
+            transition: 300ms;
 }
 
 .brand-text-e {
@@ -177,7 +183,7 @@ a {
     display: inline-flex;
     display: -webkit-inline-flex;
     color: black;
-    font-family: "Open Sans";
+    font-family: "sans";
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
@@ -193,7 +199,7 @@ a {
     width: 50px;
     height: 38px;
     color: white;
-    font-family: "Open Sans";
+    font-family: "sans";
     font-size: 16px;
     font-weight: 400;
     line-height: 38px;
@@ -286,7 +292,7 @@ a {
 
 .index-description {
     color: black;
-    font-family: "Open Sans";
+    font-family: "sans";
     font-size: 21px;
     text-transform: uppercase;
 }
@@ -361,7 +367,7 @@ img.service-candibober {
 
 .service-tile-header {
     color: #f34c13;
-    font-family: "Monotype Corsiva";
+    font-family: "corsiva";
     font-size: 28px;
     font-weight: 400;
     line-height: 32px;
@@ -372,7 +378,7 @@ img.service-candibober {
 
 .service-tile-description {
     color: #646058;
-    font-family: "Open Sans";
+    font-family: "sans";
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
@@ -396,8 +402,9 @@ img.service-candibober {
   display: flex;
   flex-direction: column;
 }
-.services-carousel{
+.services-carousel {
     height: 335px;
+    margin-top: 30px;
 }
 .services-carousel-slide{
     height: 335px;
@@ -408,9 +415,9 @@ img.service-candibober {
 .services-carousel-slide:before{
 content: "";
     position: absolute;
-    height: 335px;
+    height: 100%;
     width: 100%;
-    background-size: 55%;
+    background-size: contain;
     background-position: right top;
     background-image: url(../img/sl1b.png);
     background-repeat: no-repeat;
@@ -418,12 +425,96 @@ content: "";
 .services-carousel-slide-header {
     color: white;
     font-weight: 400;
-    font-family: "Monotype Corsiva";
+    font-family: "corsiva";
     font-size: 45px;
+    position: relative;
+    z-index: 10;
+        text-align: right;
+    padding: 75px;
 }
 .services-carousel-slide-description {
     color: white;
     font-weight: 400;
-    font-family: "Open Sans";
-    font-size: 22px;
+    font-family: "sans";
+    font-size: 20px;
+    text-align: right;
+    position: relative;
+    padding: 0 75px;
+}
+.cosiness-block {
+    background-image: url(../img/img.png);
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+}
+.cosiness-header {
+    color: white;
+    font-family: "corsiva";
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 45px;
+    padding: 30px;
+    margin-top: 30px;
+}
+.cosiness-description {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    color: white;
+    line-height: 24px;
+    font-family: "sans";
+    font-size: 16px;
+    font-weight: 700;
+    width: 79%;
+    margin-bottom: 40px;
+}
+.cosiness-footer {
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.62);
+    color: white;
+    line-height: 24px;
+    font-family: "Palatino Linotype";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    width: 80%;
+        margin-top: 30px;
+        margin-bottom: 70px;
+}
+.advantage-header {
+    color: black;
+    font-family: "Palatino Linotype";
+    font-size: 37px;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    position: relative;
+    top: -25px;
+}
+.advantage-candibober{
+    margin-bottom: 35px;
+}
+.advantage-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+}
+.advantage-description {
+    color: black;
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    align-items: baseline;
+}
+.advantage-block {
+    margin-bottom: 40px;
 }

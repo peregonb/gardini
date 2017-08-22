@@ -39,7 +39,13 @@ width: 100%;
     justify-content: center;
     width: 100%;
     }
-    
+   .candibober-brand {
+    background-image: url(../img/cb.svg);
+        width: 76px;
+} 
+.brand-text {
+    color: black;
+}
 }
 
 
@@ -56,7 +62,7 @@ width: 100%;
 }
 .index-description {
     color: black;
-    font-family: "Open Sans";
+    font-family: "sans";
     font-size: 18px;
     text-align: center;
     text-transform: uppercase;
@@ -65,9 +71,85 @@ width: 100%;
 .index-button {
     font-size: 25px;
 }
+.services-carousel-slide-header {
+    color: white;
+    font-weight: 400;
+    font-family: "corsiva";
+    font-size: 38px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    line-height: 45px;
+    margin: 75px;
+    padding: 0;
+    background-color: #ff4202;
+}
+.services-carousel-slide:before {
+   background-image: none;
+}
+.services-carousel-slide-description {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    background-color: #ff4202;
+    width: 60%;
+}
+.cosiness-header {
+    font-size: 35px;
+    line-height: 40px;
+}
+.cosiness-description {
+    line-height: 23px;
+    font-size: 14px;
+    width: 77%;
+}
+.cosiness-footer {
+    line-height: 20px;
+    font-size: 22px;
+    width: 80%;
+}
+.brand-text {
+    color: black;
+    -webkit-transition: 300ms;
+       -moz-transition: 300ms;
+        -ms-transition: 300ms;
+         -o-transition: 300ms;
+            transition: 300ms;
 }
 
+}
 
+@media only screen and (max-width: 550px) {
+    .services-carousel-slide-header {
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    line-height: 38px;
+    margin: 70px 80px;
+    padding: 0;
+    background-color: #ff4202;
+}
+.services-carousel-slide-description {
+    color: white;
+    font-weight: 400;
+    font-family: "sans";
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ff4202;
+    width: 58%;
+    position: relative;
+    top: -10px;
+}
+}
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 479px) {
@@ -81,6 +163,32 @@ width: 100%;
 }
 .index-button {
     padding: 5px 45px;
+}
+.services-carousel-slide-header {
+    color: white;
+    font-weight: 400;
+    font-family: "corsiva";
+    font-size: 28px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    line-height: 32px;
+    margin: 70px 80px;
+    padding: 0;
+    background-color: #ff4202;
+}
+.services-carousel-slide-description {
+    color: white;
+    font-weight: 400;
+    font-family: "sans";
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #ff4202;
+    width: 58%;
+    position: relative;
+    top: -30px;
 }
 }
 

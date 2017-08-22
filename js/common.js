@@ -18,6 +18,7 @@ $(document).ready(function() {
                 $('header').addClass('shrink');
                 $('li').addClass('white');
                 $('.brand-text').addClass('brand-text-e');
+                $('.brand-text').css("color", "white");
                 $('.candibober-brand').css("display", "none");
                 $('.header-lang-block-selected').css("border-bottom", "4px solid white");
                 $('.hamburger .line').css("background-color", "white");
@@ -34,6 +35,7 @@ $(document).ready(function() {
                 $('header').removeClass('shrink');
                 $('li').removeClass('white');
                 $('.brand-text').removeClass('brand-text-e');
+                $('.brand-text').css("color", "black");
                 $('.candibober-brand').css("display", "inherit");
                 $('.header-lang-block-selected').css("border-bottom", "none");
                 $('.hamburger .line').css("background-color", "black");
@@ -90,6 +92,8 @@ $(document).ready(function() {
 $(window).resize(function() {
     var winwidth = $(window).outerWidth();
     if (winwidth > 991) {
+        $('.brand-text').css("color", "white");
+        $('.candibober-brand').css("background", "url(../img/ca.svg);");
         $('.header-menu').css("display", "flex");
         $('.header-menu').css("display", "-webkit-box");
         $('.header-menu').css("display", "-webkit-flex");
@@ -102,6 +106,8 @@ $(window).resize(function() {
 
     } else if (winwidth < 992) {
         $('.header-menu').css("display", "none");
+        $('.brand-text').css("color", "black");
+        $('.candibober-brand').css("background", "url(../img/cb.svg);");
         $(".header-menu>li").hover(function() {
                 $(this).css("border-left", "4px solid white");
                 $(this).css("border-bottom", "4px solid transparent");

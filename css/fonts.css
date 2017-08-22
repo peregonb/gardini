@@ -10,3 +10,9 @@
 	src: url("../fonts/minion.otf");
 	font-style: normal;
 }
+/* font-family: "sans"; */
+@font-face {
+	font-family: "sans";
+	src: url("../fonts/sans.ttf");
+	font-style: normal;
+}
