@@ -45,6 +45,25 @@ width: 100%;
 } 
 .brand-text {
     color: black;
+}  
+
+.shrink .container-header .candibober-brand {
+    background-image: url(../img/cb.svg);
+        width: 76px;
+} 
+.shrink .container-header .brand-text {
+    color: white;
+}
+
+.header-menu>li:hover {
+border-bottom: 4px solid transparent;
+border-left: 4px solid white;
+    border-top: 5px double transparent;
+}
+.shrink .container-header .header-menu>li:hover {
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid white;
+    border-top: 4px solid transparent;
 }
 }
 
@@ -150,6 +169,10 @@ width: 100%;
     width: 58%;
     position: relative;
     top: -10px;
+}
+.services-header {
+    text-align: center;
+    line-height: 45px;
 }
 }
 /* Extra Small Devices, Phones */

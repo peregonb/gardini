@@ -133,12 +133,148 @@
         </div>
 </div>
     </div>
+    <div class="container introduce-block">
+      <div class="services-header introduce-header">Мы предоставляем услуги:</div> 
+      <div class="introduce-section">
+      <img src="./img/c1.svg" class="introduce-section-img">
+      <img src="./img/c2.svg" class="introduce-section-img">
+  </div>
+    </div>
+<div class="container-fluid container-fluid-map">
+    <div class="map" id="map"></div>
+    <div class="map-contacts"></div>
+</div>
     <!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
     <script src="libs/html5shiv/html5shiv.min.js"></script>
     <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
     <script src="libs/respond/respond.min.js"></script>
     <![endif]-->
+    <script>
+    function initMap() {
+        var uluru = { lat: 50.402335, lng: 30.624691 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: uluru,
+            styles: [
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "hue": "#ff2900"
+            },
+            {
+                "saturation": 43.400000000000006
+            },
+            {
+                "lightness": 37.599999999999994
+            },
+            {
+                "gamma": 1
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "hue": "#ff2900"
+            },
+            {
+                "saturation": -1.0989010989011234
+            },
+            {
+                "lightness": 11.200000000000017
+            },
+            {
+                "gamma": 1
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "hue": "#ff0072"
+            },
+            {
+                "saturation": -61.8
+            },
+            {
+                "lightness": 45.599999999999994
+            },
+            {
+                "gamma": 1
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 51.19999999999999
+            },
+            {
+                "gamma": 1
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "all",
+        "stylers": [
+            {
+                "hue": "#ff0300"
+            },
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 52
+            },
+            {
+                "gamma": 1
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "hue": "#0078FF"
+            },
+            {
+                "saturation": -13.200000000000003
+            },
+            {
+                "lightness": 2.4000000000000057
+            },
+            {
+                "gamma": 1
+            }
+        ]
+    }
+]
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            icon: {
+                url: "img/mark.svg",
+                scaledSize: new google.maps.Size(29, 35)
+            }
+        });
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbyFe5QSQQs55LgZZaQcfWwphPTIZo-TA&callback=initMap" async defer></script>
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/common.js"></script>

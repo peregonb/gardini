@@ -521,6 +521,55 @@ content: "";
 img.advantage-img {
     height: 102px;
 }
-.b1{
-    display: block;
+.header-menu>li:hover {
+border-bottom: 4px solid transparent;
+    border-top: 5px double #ff4202;
+}
+.shrink .container-header .header-menu>li:hover {
+    border-bottom: 4px solid white;
+    border-top: 4px solid transparent;
+}
+.introduce-block{
+height: 600px;
+    background-size: cover;
+    background: url(../img/we.png) 0 0 no-repeat;
+}
+.introduce-header{
+    margin-top: 35px;
+}
+.introduce-section-img {
+    width: 90%;
+    display: flex;
+}
+.introduce-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+}
+.introduce-section-img{
+    margin-top: 30px;
+}
+#map{
+    height: 400px;
+}
+.map-contacts{
+    height: 300px;
+    width: 200px;
+    background-color:white;
+    position: absolute;
+}
+.container-fluid-map {
+    padding: 0;
+    height: 400px;
+}
+.map-contacts {
+    height: 300px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: relative;
+    top: -350px;
+    z-index: 9999;
+    left: 10%;
 }
