@@ -195,4 +195,9 @@ width: 100%;
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 319px) {}
+@media only screen and (max-width: 320px) {
+    
+    .advantage-description {
+    font-size: 13px;
+}
+}
