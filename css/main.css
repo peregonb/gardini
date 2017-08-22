@@ -518,3 +518,6 @@ content: "";
 .advantage-block {
     margin-bottom: 40px;
 }
+img.advantage-img {
+    height: 102px;
+}
