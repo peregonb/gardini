@@ -513,8 +513,9 @@ content: "";
     text-align: center;
     padding: 20px 0;
     display: flex;
+    display: -webkit-flex;
     line-height: 22px;
-    align-items: baseline;
+    align-items: center;
 }
 .advantage-block {
     margin-bottom: 40px;
