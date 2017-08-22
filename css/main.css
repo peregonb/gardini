@@ -513,8 +513,6 @@ content: "";
     text-align: center;
     padding: 20px 0;
     display: flex;
-    line-height: 22px;
-    align-items: baseline;
 }
 .advantage-block {
     margin-bottom: 40px;
