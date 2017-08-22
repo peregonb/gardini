@@ -16,3 +16,9 @@
 	src: url("../fonts/sans.ttf");
 	font-style: normal;
 }
+/* font-family: "myriad"; */
+@font-face {
+	font-family: "myriad";
+	src: url("../fonts/myriad.otf");
+	font-style: normal;
+}
