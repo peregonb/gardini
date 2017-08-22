@@ -45,25 +45,40 @@ width: 100%;
 } 
 .brand-text {
     color: black;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
 }  
 
 .shrink .container-header .candibober-brand {
     background-image: url(../img/cb.svg);
         width: 76px;
+        -webkit-transition: 150ms;
+        -o-transition: 150ms;
+        transition: 150ms;
 } 
 .shrink .container-header .brand-text {
     color: white;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
 }
 
 .header-menu>li:hover {
 border-bottom: 4px solid transparent;
 border-left: 4px solid white;
     border-top: 5px double transparent;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
 }
 .shrink .container-header .header-menu>li:hover {
     border-bottom: 4px solid transparent;
     border-left: 4px solid white;
     border-top: 4px solid transparent;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
 }
 }
 

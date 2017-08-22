@@ -524,10 +524,16 @@ img.advantage-img {
 .header-menu>li:hover {
 border-bottom: 4px solid transparent;
     border-top: 5px double #ff4202;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
 }
 .shrink .container-header .header-menu>li:hover {
     border-bottom: 4px solid white;
     border-top: 4px solid transparent;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
 }
 .introduce-block{
 height: 600px;
