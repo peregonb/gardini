@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="ru">
-<!--<![endif]-->
-
 <head>
     <meta charset="utf-8" />
     <title>Княжi Гардини</title>
@@ -142,6 +136,9 @@
     </div>
 <div class="container-fluid container-fluid-map">
     <div class="map" id="map"></div>
+    
+</div>
+<div class="map-contacts-stack">
     <div class="map-contacts">
         <div class="map-contacts-title">Княжие гардины</div>
         <div class="map-contacts-description">
@@ -152,140 +149,24 @@
             Время работы:<br>
             9:00-18:00<br>
         </div>
-
-    </div>
-    
 </div>
-    <!--[if lt IE 9]>
-    <script src="libs/html5shiv/es5-shim.min.js"></script>
-    <script src="libs/html5shiv/html5shiv.min.js"></script>
-    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-    <script src="libs/respond/respond.min.js"></script>
-    <![endif]-->
-    <script>
-    function initMap() {
-        var uluru = { lat: 50.402335, lng: 30.624691 };
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 17,
-            center: uluru,
-            styles: [
-    {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#ff2900"
-            },
-            {
-                "saturation": 43.400000000000006
-            },
-            {
-                "lightness": 37.599999999999994
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#ff2900"
-            },
-            {
-                "saturation": -1.0989010989011234
-            },
-            {
-                "lightness": 11.200000000000017
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#ff0072"
-            },
-            {
-                "saturation": -61.8
-            },
-            {
-                "lightness": 45.599999999999994
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 51.19999999999999
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#ff0300"
-            },
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 52
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "hue": "#0078FF"
-            },
-            {
-                "saturation": -13.200000000000003
-            },
-            {
-                "lightness": 2.4000000000000057
-            },
-            {
-                "gamma": 1
-            }
-        ]
-    }
-]
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-            icon: {
-                url: "img/mark.svg",
-                scaledSize: new google.maps.Size(29, 35)
-            }
-        });
-    }
-    </script>
+<div class="map-form">
+    <div class="map-contacts-title map-form-title">Получить консультацию</div>
+    <form class="form">
+        <div class="map-form-textfield-image-tile">
+            <div class="map-form-textfield-image-tile-img"></div>
+            <input type="text" class="map-form-textfield map-form-textfield-text" placeholder="Ваше имя*">
+        </div>
+        <div class="map-form-textfield-image-tile">
+            <div class="map-form-textfield-image-tile-img map-form-textfield-image-tile-img-2"></div>
+            <input type="tel" class="map-form-textfield map-form-textfield-tel" placeholder="Ваш телефон*">
+        </div>
+        
+        <button type="submit" class="map-form-button index-button lifted drop-shadow" placeholder="Заказать звонок">Заказать звонок</button>
+    </form>
+</div>
+    </div>
+
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbyFe5QSQQs55LgZZaQcfWwphPTIZo-TA&callback=initMap" async defer></script>
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>
     <script src="js/slick.min.js"></script>

@@ -451,6 +451,7 @@ content: "";
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-attachment: fixed;
     text-align: center;
     margin-top: 15px;
 }
@@ -535,10 +536,12 @@ border-bottom: 4px solid transparent;
     -o-transition: 150ms;
     transition: 150ms;
 }
-.introduce-block{
-height: 600px;
+.introduce-block {
+    height: 630px;
     background-size: cover;
-    background: url(../img/we.png) 0 0 no-repeat;
+    background-attachment: fixed;
+    background-image: url(../img/we.png);
+    background-repeat: no-repeat;
 }
 .introduce-header{
     margin-top: 35px;
@@ -571,13 +574,11 @@ height: 600px;
     height: 400px;
 }
 .map-contacts {
-height: 300px;
+    height: 300px;
     width: 250px;
     background-color: rgba(255, 255, 255, 0.95);
     position: relative;
-    top: -350px;
     z-index: 9999;
-    left: 10%;
     box-shadow: 0 1px 1px #c76767;
     border-radius: 2px;
 }
@@ -596,4 +597,80 @@ height: 300px;
     font-weight: 400;
     line-height: 24px;
     padding: 20px;
+}
+.map-form-title{
+    color: black;
+}
+.map-contacts-stack {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: -350px;
+    width: 100%;
+}
+.map-form {
+    height: 300px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+form.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+input.map-form-textfield.map-form-textfield-text {
+    color: #d1d1d1;
+    font-family: "sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    outline: none;
+    height: 45px;
+}
+input.map-form-textfield.map-form-textfield-tel {
+        color: #d1d1d1;
+    font-family: "sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+    outline: none;
+    height: 45px;
+}
+button.map-form-button.index-button.lifted.drop-shadow {
+    border: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+button.map-form-button.index-button.lifted.drop-shadow:active, 
+    button.map-form-button.index-button.lifted.drop-shadow:focus, 
+        button.map-form-button.index-button.lifted.drop-shadow:visited {
+    border: none;
+    outline: none;
+}
+input.map-form-textfield {
+    width: 80%;
+    display: flex;
+    align-self: center;
+    margin-bottom: 25px;
+}
+.map-form-textfield-image-tile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.map-form-textfield-image-tile-img {
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-image: url(../img/man.svg);
+}
+.map-form-textfield-image-tile-img-2 {
+    background-image: url(../img/phone.svg);
 }
