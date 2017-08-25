@@ -700,5 +700,5 @@ footer {
     line-height: 24px;
 }
 .service-candibober-main{
-        top: -10px;
+        top: -10px !important;
 }
