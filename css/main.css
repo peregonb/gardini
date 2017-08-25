@@ -208,9 +208,14 @@ a {
     cursor: pointer;
     background-color: rgba(255, 66, 2, 0.3);
 }
+.shrink .header-lang-block-selected {
+    border-bottom: 4px solid white;
+    background-color: transparent;
+}
 
 .header-lang-block-selected {
     background-color: #ff4202;
+        border-bottom: 4px solid transparent;
 }
 
 #hamburger-1.is-active .line:nth-child(2) {
@@ -354,7 +359,7 @@ img.service-candibober {
     height: 31px;
     width: 100%;
     position: relative;
-    top: -5px;
+    top: 10px;
 }
 
 .service-tile {
@@ -387,6 +392,7 @@ img.service-candibober {
 
 .services-content {
     padding: 50px 0 60px 0;
+    padding-bottom: 0;
 }
 .row{
     margin: 0;
@@ -494,7 +500,7 @@ content: "";
     text-align: center;
     font-style: italic;
     position: relative;
-    top: -25px;
+    margin-top: 20px;
 }
 .advantage-candibober{
     margin-bottom: 35px;
@@ -542,6 +548,7 @@ border-bottom: 4px solid transparent;
     background-attachment: fixed;
     background-image: url(../img/we.png);
     background-repeat: no-repeat;
+    padding: 0;
 }
 .introduce-header{
     margin-top: 35px;
@@ -572,13 +579,15 @@ border-bottom: 4px solid transparent;
 .container-fluid-map {
     padding: 0;
     height: 400px;
+    position: relative;
+    z-index: -5;
 }
 .map-contacts {
     height: 300px;
     width: 250px;
     background-color: rgba(255, 255, 255, 0.95);
     position: relative;
-    z-index: 9999;
+    z-index: 10;
     box-shadow: 0 1px 1px #c76767;
     border-radius: 2px;
 }
@@ -607,6 +616,7 @@ border-bottom: 4px solid transparent;
     position: absolute;
     margin-top: -350px;
     width: 100%;
+    flex-flow: row wrap;
 }
 .map-form {
     height: 300px;
@@ -673,4 +683,19 @@ input.map-form-textfield {
 }
 .map-form-textfield-image-tile-img-2 {
     background-image: url(../img/phone.svg);
+}
+footer {
+    background-color: #ff4202;
+    height: 55px;
+    box-shadow: 0 0 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text {
+    color: white;
+    font-family: "minion";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
 }

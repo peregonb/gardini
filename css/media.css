@@ -80,6 +80,13 @@ border-left: 4px solid white;
     -o-transition: 150ms;
     transition: 150ms;
 }
+.map-contacts-stack {
+    margin-top: 0;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    position: relative;
+    background-color: rgba(219,183,171, 0.13);
+}
 }
 
 
@@ -156,6 +163,18 @@ border-left: 4px solid white;
 }
 .b1{
     display: none;
+}
+.map-contacts-stack {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.map-form {
+    width: 80%;
+    margin-top: 30px;
+}
+.map-contacts {
+    width: 80%;
 }
 }
 

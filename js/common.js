@@ -59,7 +59,8 @@ $(window).resize(function() {
                 $('header').addClass('shrink');
                 $('li').addClass('white');
                 $('.brand-text').addClass('brand-text-e');
-                $('.header-lang-block-selected').css("border-bottom", "4px solid white");
+                // $('.header-lang-block-selected').css("border-bottom", "4px solid white");
+                // $('.header-lang-block-selected').css("background-color", "transparent");
                 $('.hamburger .line').css("background-color", "white");
                 $('.header-menu').css("top", "60px");
 
@@ -67,7 +68,8 @@ $(window).resize(function() {
                 $('header').removeClass('shrink');
                 $('li').removeClass('white');
                 $('.brand-text').removeClass('brand-text-e');
-                $('.header-lang-block-selected').css("border-bottom", "none");
+                // $('.header-lang-block-selected').css("border-bottom", "transparent solid 4px");
+                // $('.header-lang-block-selected').css("background-color", "#ff4202");
                 $('.hamburger .line').css("background-color", "black");
                 $('.header-menu').css("top", "75px");
             }
@@ -415,3 +417,23 @@ function initMap() {
         });
     }
 
+
+$('a[href^="#"]').click(function() {
+$('html,body').animate({ scrollTop: $(this.hash).offset().top});
+return false;
+e.preventDefault();
+});
+
+
+ $('.header-lang-block-2').addClass("header-lang-block-selected");
+    $('.header-lang-block-1').on('click', function(e) {
+      $('.header-lang-block-1').addClass("header-lang-block-selected"); //you can list several class names 
+      $('.header-lang-block-2').removeClass("header-lang-block-selected");
+      e.preventDefault();
+    });
+
+    $('.header-lang-block-2').on('click', function(e) {
+      $('.header-lang-block-2').addClass("header-lang-block-selected"); //you can list several class names
+      $('.header-lang-block-1').removeClass("header-lang-block-selected"); 
+      e.preventDefault();
+    });
