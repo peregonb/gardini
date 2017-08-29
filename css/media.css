@@ -208,6 +208,9 @@ border-left: 4px solid white;
     text-align: center;
     line-height: 45px;
 }
+.b1{
+    display: block;
+}
 }
 /* Extra Small Devices, Phones */
 
