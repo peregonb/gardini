@@ -711,6 +711,8 @@ footer {
     margin: 0 auto;
     display: flex;
     position: absolute;
+    left: 0;
+    right: 0;
     background-image: url(../img/down.svg);
     background-repeat: no-repeat;
     background-size: 36%;
