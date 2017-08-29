@@ -259,6 +259,11 @@ img.advantage-candibober {
     width: 100%;
     z-index: 9999;
 }
+#map {
+    height: 400px;
+    width: 100%;
+    z-index: 9999;
+}
 }
 
 
