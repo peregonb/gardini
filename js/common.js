@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.services-carousel').slick({
-        arrows: false,
+        arrows: true,
         dots: true
     });
     $("#top").click(function() {
@@ -419,7 +419,7 @@ function initMap() {
 
 
 $('a[href^="#"]').click(function() {
-$('html,body').animate({ scrollTop: $(this.hash).offset().top});
+$('html,body').animate({ scrollTop: $(this.hash).offset().top-60});
 return false;
 e.preventDefault();
 });

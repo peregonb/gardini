@@ -702,3 +702,19 @@ footer {
 .service-candibober-main{
         top: -10px !important;
 }
+.down-button {
+    width: 56px;
+    height: 56px;
+    background-color: #cacaca;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.63);
+    border-radius: 65px;
+    margin-top: 0vh;
+    display: flex;
+    position: absolute;
+    background-image: url(../img/down.svg);
+    background-repeat: no-repeat;
+    background-size: 36%;
+    background-position: center;
+    background-position-y: 57%;
+    bottom: 3vh;
+}
