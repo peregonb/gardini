@@ -417,7 +417,6 @@ function initMap() {
         });
     }
 
-
 $('a[href^="#"]').click(function() {
 $('html,body').animate({ scrollTop: $(this.hash).offset().top-60});
 return false;
