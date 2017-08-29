@@ -10,8 +10,8 @@ $(document).ready(function() {
         return false;
     });
 
-
-
+var viewportHeight = $('.index-bg').outerHeight();
+$('.index-bg').css({ height: viewportHeight });
 
 function scrollbarWidth() {
     var block = $('<div>').css({ 'height': '50px', 'width': '50px' }),
@@ -26,7 +26,6 @@ function scrollbarWidth() {
 }
 
 
-
 $(window).resize(function() {
     var winwidth = $(window).outerWidth();
     if (winwidth > 991 - scrollbarWidth()) {
@@ -39,14 +38,6 @@ $(window).resize(function() {
         $('.hamburger').removeClass('is-active');
     }
 });
-
-
-
-
-
-
-
-
 
 
     $(function() {
@@ -85,13 +76,6 @@ $(window).resize(function() {
     });
 
 
-
-
-
-
-
-
-
     $(window).ready(function() {
         var winwidth = $(window).outerWidth();
         if (winwidth > 991) {
@@ -103,11 +87,8 @@ $(window).resize(function() {
     });
 
 
-
-
-
-
     $(".hamburger").click(function() {
+
         $(this).toggleClass("is-active");
     });
     $('.hamburger').click(function() {
