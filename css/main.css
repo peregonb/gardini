@@ -281,7 +281,6 @@ a {
 }
 
 .index-content {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,7 +308,6 @@ a {
     font-size: 29px;
     font-weight: 400;
     padding: 5px 50px;
-    margin-top: 10vh;
 }
 
 .drop-shadow {
@@ -717,7 +715,6 @@ footer {
     background-size: 36%;
     background-position: center;
     background-position-y: 57%;
-    bottom: 3vh;
     justify-self: center;
     align-self: center;
 }

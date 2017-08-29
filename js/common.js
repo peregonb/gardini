@@ -10,8 +10,10 @@ $(document).ready(function() {
         return false;
     });
 
-var viewportHeight = $('.index-bg').outerHeight();
-$('.index-bg').css({ height: viewportHeight });
+$('.index-bg').css("height", "100vh");
+$('.index-content').css("height", "100vh");
+$('.index-button').css("margin-top", "10vh");
+$('.down-button').css("bottom", "3vh");
 
 function scrollbarWidth() {
     var block = $('<div>').css({ 'height': '50px', 'width': '50px' }),
