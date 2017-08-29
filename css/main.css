@@ -562,6 +562,8 @@ border-bottom: 4px solid transparent;
     align-items: center;
     height: 80%;
     flex-flow: row wrap;
+    width: 771px;
+    margin: 0 auto;
 }
 .introduce-section-img{
     margin-top: 30px;
