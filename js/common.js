@@ -95,7 +95,7 @@ $(window).resize(function() {
     });
     $('.hamburger').click(function() {
         $('.header-menu').slideToggle({ top: 'toggle' });
-
+        
     });
 
 });
@@ -407,15 +407,12 @@ e.preventDefault();
 });
 
 
- $('.header-lang-block-2').addClass("header-lang-block-selected");
     $('.header-lang-block-1').on('click', function(e) {
       $('.header-lang-block-1').addClass("header-lang-block-selected"); //you can list several class names 
       $('.header-lang-block-2').removeClass("header-lang-block-selected");
-      e.preventDefault();
     });
 
     $('.header-lang-block-2').on('click', function(e) {
       $('.header-lang-block-2').addClass("header-lang-block-selected"); //you can list several class names
       $('.header-lang-block-1').removeClass("header-lang-block-selected"); 
-      e.preventDefault();
     });

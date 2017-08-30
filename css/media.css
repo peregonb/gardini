@@ -87,6 +87,10 @@ border-left: 4px solid white;
     position: relative;
     background-color: rgba(219,183,171, 0.13);
 }
+.introduce-section {
+    width: 100%;
+        padding: 0 25px;
+}
 }
 
 
@@ -207,6 +211,8 @@ border-left: 4px solid white;
 .services-header {
     text-align: center;
     line-height: 45px;
+    padding: 0 20px;
+    font-size: 36px;
 }
 .b1{
     display: block;

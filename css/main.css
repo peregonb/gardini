@@ -445,7 +445,7 @@ content: "";
     padding: 0 75px;
 }
 .cosiness-block {
-    background-image: url(../img/img.png);
+    background-image: url(../img/img.jpg);
     height: auto;
     background-size: cover;
     background-position: center;
@@ -564,6 +564,7 @@ border-bottom: 4px solid transparent;
     flex-flow: row wrap;
     width: 771px;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 .introduce-section-img{
     margin-top: 30px;
@@ -602,8 +603,8 @@ border-bottom: 4px solid transparent;
 }
 .map-contacts-description {
     color: #414141;
-    font-family: "Myriad Pro";
-    font-size: 16px;
+    font-family: "sans";
+    font-size: 15px;
     font-weight: 400;
     line-height: 24px;
     padding: 20px;
@@ -735,6 +736,21 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
 }
+.introduce-section-tile:nth-child(2) {
+    background-image: url(../img/cc2.svg);
+}
+.introduce-section-tile:nth-child(3) {
+    background-image: url(../img/cc3.svg);
+}
+.introduce-section-tile:nth-child(4) {
+    background-image: url(../img/cc4.svg);
+}
+.introduce-section-tile:nth-child(5) {
+    background-image: url(../img/cc5.svg);
+}
+.introduce-section-tile:nth-child(6) {
+    background-image: url(../img/cc6.svg);
+}
 .introduce-block {
     height: auto;
     background-size: cover;
@@ -743,4 +759,18 @@ footer {
     background-image: url(../img/we.png);
     background-repeat: no-repeat;
     padding: 0;
+}
+.introduce-section-text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-family: "sans";
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0 25%;
 }
