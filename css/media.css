@@ -22,15 +22,15 @@
         flex-direction: column;
     }
     .header-menu {
-width: 100%;
+    width: 100%;
     position: fixed;
     left: 0;
-    background: #ff4202;
+    background: #ae1717;
     flex-direction: column;
     top: 75px;
-    height: 220px;
+    height: 180px;
     z-index: 9999;
-    }
+}
     .header-menu li {
         line-height: 35px;
         color: white;
@@ -97,7 +97,10 @@ border-left: 4px solid white;
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 767px) {
-	
+	.nbsp{
+     display: none;   
+    }
+
 	.index-header {
     color: #da3b38;
     font-family: "corsiva";
@@ -120,12 +123,12 @@ border-left: 4px solid white;
     color: white;
     font-weight: 400;
     font-family: "corsiva";
-    font-size: 38px;
+    font-size: 30px;
     position: relative;
     z-index: 10;
     text-align: center;
-    line-height: 45px;
-    margin: 75px;
+    line-height: 40px;
+    margin: 60px 124px 15px 124px;
     padding: 0;
     background-color: #ff4202;
 }
@@ -180,8 +183,71 @@ border-left: 4px solid white;
 .map-contacts {
     width: 80%;
 }
+    .services-carousel-slide-description-final {
+    margin-top: 15px;
+    font-size: 20px;
 }
-
+.index-header1 {
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px rgba(200, 200, 200, 0.8);
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+.index-header2 {
+    text-shadow: -3px 0 0 #d69d39;
+    color: white;
+    font-size: 39px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ae1717;
+    padding: 0px 18px;
+    border: #d69d39 solid 3px;
+    outline: #ae1717 solid 7px;
+    margin: 20px 0 25px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.index-header {
+    color: #da3b38;
+    font-family: "corsiva";
+    font-size: 38px;
+    text-align: center;
+    line-height: 31px;
+    margin-bottom: 0;
+    width: auto;
+    position: relative;
+    left: -20px;
+}
+.index-description1 {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.index-description1-span {
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.index-description2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+}
+@media only screen and (max-width: 610px) {
+   .services-carousel-slide-header {
+    line-height: 30px;
+    margin: 60px 124px 15px 124px;
+} 
+}
 @media only screen and (max-width: 550px) {
     .services-carousel-slide-header {
     color: white;
@@ -217,6 +283,23 @@ border-left: 4px solid white;
 .b1{
     display: block;
 }
+.services-carousel-slide-header {
+    color: white;
+    font-weight: 400;
+    font-size: 26px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    line-height: 35px;
+    margin: 55px 80px 35px 80px;
+    padding: 0;
+    background-color: #ff4202;
+}
+.services-carousel-slide-description-final {
+    margin-top: 25px;
+    font-family: "corsiva";
+    font-size: 18px;
+}
 }
 /* Extra Small Devices, Phones */
 
@@ -239,27 +322,33 @@ img.advantage-candibober {
     color: white;
     font-weight: 400;
     font-family: "corsiva";
-    font-size: 28px;
+    font-size: 27px;
     position: relative;
     z-index: 10;
     text-align: center;
-    line-height: 32px;
-    margin: 70px 80px;
-    padding: 0;
+    line-height: 26px;
+    margin: 35px 60px;
+    padding: 5px 8px;
     background-color: #ff4202;
 }
 .services-carousel-slide-description {
     color: white;
     font-weight: 400;
     font-family: "sans";
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     margin: 0 auto;
-    padding: 0;
+    margin-top: 15px;
+    padding: 5px 8px;
     background-color: #ff4202;
     width: 58%;
     position: relative;
-    top: -30px;
+    top: -15px;
+}
+.services-carousel-slide-description-final {
+    font-family: "corsiva";
+    font-size: 16px;
+    line-height: 18px;
 }
 .container-fluid-map {
     padding: 0;
@@ -273,11 +362,79 @@ img.advantage-candibober {
     width: 100%;
     z-index: 9999;
 }
+.index-header1 {
+    font-size: 21px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px rgba(200, 200, 200, 0.8);
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+.index-header2 {
+   
+    font-size: 29px;
+    padding: 0px 9px;
+    margin: 15px 0 20px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.index-header {
+    font-size: 28px;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 0;
+    width: auto;
+    position: relative;
+    left: -14px;
+}
+.index-description {
+    color: black;
+    font-family: "sans";
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.index-description1 {
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.index-description1-span {
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+.index-description2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
 }
 
 
 /* Custom, iPhone Retina */
 
 @media only screen and (max-width: 320px) {
-    
+   .index-header2 {
+    font-size: 27px;
+    padding: 0px 9px;
+    margin: 15px 0 20px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.index-header {
+    font-size: 25px;
+    text-align: center;
+    line-height: 23px;
+    margin-bottom: 0;
+    width: auto;
+    position: relative;
+    left: -14px;
+} 
 }
