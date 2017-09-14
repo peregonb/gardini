@@ -94,6 +94,12 @@ border-left: 4px solid white;
 .brand-text-new {
 display: block;
 }
+.introduce-block:before {
+display: none;
+}
+.int-img {
+display: none;
+}
 }
 
 
@@ -424,7 +430,7 @@ img.advantage-candibober {
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 355px) {
    .index-header2 {
     font-size: 27px;
     padding: 0px 9px;

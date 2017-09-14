@@ -1,7 +1,16 @@
 $(document).ready(function() {
+$('.slider2').find('.slick-list').find('.slick-track').children('.slick-active').eq(1).addClass('center');
     $('.services-carousel').slick({
         arrows: true,
         dots: true
+    }); 
+       $('.slider2').slick({
+        arrows: true,
+        dots: false,
+        infinite: true,
+  slidesToShow: 3,
+  centerMode: true
+  
     });
     $("#top").click(function() {
         $("body, html").animate({

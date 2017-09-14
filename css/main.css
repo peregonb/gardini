@@ -415,8 +415,9 @@ img.service-candibober {
     height: 335px;
     margin-top: 30px;
 }
-.services-carousel-slide{
+.services-carousel-slide {
     height: 335px;
+    background-size: cover !important;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -882,4 +883,35 @@ footer {
 }
 .int-img2 {
     bottom: 18px;
+}
+.slider2-block-fl {
+    height: auto;
+}
+.slider2-block {
+    height: 100%;
+    padding: 0;
+}
+.slider2-slide {
+    background-image: url(../img/slide2sl.png);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+.slick-active{
+    background-size: 90%;
+    opacity: 0.5;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+}
+.slick-center{
+    opacity: 1;
+    background-size: 100%;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
 }
