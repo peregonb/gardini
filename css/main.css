@@ -900,6 +900,7 @@ footer {
     -webkit-transition: 300ms;
     -o-transition: 300ms;
     transition: 300ms;
+    opacity: 0;
 }
 .slick-active{
     background-size: 90%;
