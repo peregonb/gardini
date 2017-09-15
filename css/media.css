@@ -1,6 +1,22 @@
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1199px) {}
+@media only screen and (max-width: 1024px) {
+    .slider2-slide {
+    background-image: url(../img/slide2sl.png);
+    height: 230px;
+    background-size: 70%;
+    opacity: 0;
+}
+.slick-active{
+    background-size: 95%;
+    opacity: 1;
+}
+.slick-center{
+    opacity: 1;
+    background-size: 95%;
+}
+}
 
 
 /* Medium Devices, Desktops */
@@ -331,7 +347,7 @@ img.advantage-candibober {
     color: white;
     font-weight: 400;
     font-family: "corsiva";
-    font-size: 27px;
+    font-size: 26px;
     position: relative;
     z-index: 10;
     text-align: center;
@@ -352,6 +368,7 @@ img.advantage-candibober {
     background-color: #ff4202;
     width: 58%;
     position: relative;
+    letter-spacing: -0.2px;
     top: -15px;
 }
 .services-carousel-slide-description-final {
@@ -424,6 +441,11 @@ img.advantage-candibober {
     color: black;
     line-height: 24px;
     font-family: 'Open Sans', sans-serif;
+}
+.slider2-slide {
+    background-image: url(../img/slide2sl.png);
+    height: 165px;
+    background-size: 70%;
 }
 }
 

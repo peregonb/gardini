@@ -9,8 +9,28 @@ $('.slider2').find('.slick-list').find('.slick-track').children('.slick-active')
         dots: false,
         infinite: true,
   slidesToShow: 3,
-  centerMode: true
-  
+  centerMode: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        centerMode: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
     });
     $("#top").click(function() {
         $("body, html").animate({
