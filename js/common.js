@@ -161,3 +161,22 @@ e.preventDefault();
       $('.header-lang-block-2').addClass("header-lang-block-selected"); //you can list several class names
       $('.header-lang-block-1').removeClass("header-lang-block-selected"); 
     });
+
+
+document.getElementById('feedback-form').addEventListener('submit', function(evt){
+  var http = new XMLHttpRequest(), f = this;
+  evt.preventDefault();
+  http.open("POST", "contacts.php", true);
+  http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  http.send("nameFF=" + f.nameFF.value + "&contactFF=" + f.contactFF.value);
+  http.onreadystatechange = function() {
+    if (http.readyState == 4 && http.status == 200) {
+      alert(http.responseText + ', Ваше сообщение получено.\nМы Вам перезвоним в течении N часов.\nБлагодарю за сотрудничество!');    
+      f.messageFF.removeAttribute('value'); // очистить поле сообщения (две строки)
+      f.messageFF.value='';
+    }
+  }
+  http.onerror = function() {
+    alert('Ваше сообщение не получено. \nПопробуйте позже.');
+  }
+}, false);

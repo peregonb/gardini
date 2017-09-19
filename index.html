@@ -216,18 +216,21 @@
 </div>
 <div class="map-form">
     <div class="map-contacts-title map-form-title">Получить консультацию</div>
-    <form class="form">
+
+
+    <form method="POST" id="feedback-form" class="form">
         <div class="map-form-textfield-image-tile">
             <div class="map-form-textfield-image-tile-img"></div>
-            <input type="text" class="map-form-textfield map-form-textfield-text" placeholder="Ваше имя*">
+            <input type="text" name="nameFF" required rows="1" x-autocompletetype="name" class="map-form-textfield map-form-textfield-text" placeholder="Ваше имя*">
         </div>
         <div class="map-form-textfield-image-tile">
             <div class="map-form-textfield-image-tile-img map-form-textfield-image-tile-img-2"></div>
-            <input type="tel" class="map-form-textfield map-form-textfield-tel" placeholder="Ваш телефон*">
+            <input type="tel" name="contactFF" required rows="10" x-autocompletetype="tel" class="map-form-textfield map-form-textfield-tel" placeholder="Ваш телефон*">
         </div>
         
         <button type="submit" class="map-form-button index-button lifted drop-shadow" placeholder="Заказать звонок">Заказать звонок</button>
     </form>
+
 </div>
     </div>
 <footer>
