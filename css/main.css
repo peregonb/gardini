@@ -501,6 +501,7 @@ img.service-candibober {
     background-attachment: fixed;
     text-align: center;
     margin-top: 15px;
+    position: relative;
 }
 
 .cosiness-header {
@@ -511,6 +512,7 @@ img.service-candibober {
     line-height: 45px;
     padding: 30px;
     margin-top: 30px;
+    z-index: 1;
 }
 
 .cosiness-description {
@@ -523,6 +525,7 @@ img.service-candibober {
     width: 79%;
     margin-bottom: 40px;
     padding: 0 5%;
+    z-index: 1;
 }
 
 .cosiness-footer {
@@ -536,6 +539,7 @@ img.service-candibober {
     width: 80%;
     margin-top: 30px;
     margin-bottom: 70px;
+    z-index: 1;
 }
 
 .advantage-header {
@@ -1052,4 +1056,37 @@ img.service-candibober.service-candibober22 {
 #slider2-slide7{
     background-image: url(../img/slide2sl7-min.png);    
 }
+.map-contacts-title.map-form-title {
+    background: rgba(100, 100, 100, 0.9);
+    color: white;
+    padding: 4px 0;
+}
+.slider2-block > .slider2 > button {
+    background: transparent;
+}
+.slider2-block > .slider2 > .slick-prev {
+    background-image: url(../img/l-g.svg);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+.slider2-block > .slider2 > .slick-next {
+    background-image: url(../img/r-g.svg);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
 
+.cosiness-block:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    margin-top: 55px;
+    margin-left: -40%;
+    border-radius: 5px;
+    background-color: rgba(102, 102, 102, 0.6);
+    z-index: 0;
+}
