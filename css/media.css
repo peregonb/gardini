@@ -31,7 +31,6 @@
 }
 @media only screen and (max-width: 1024px) {
     .slider2-slide {
-    background-image: url(../img/slide2sl.png);
     height: 230px;
     background-size: 70%;
     opacity: 0;
@@ -72,7 +71,7 @@
     background: #ae1717;
     flex-direction: column;
     top: 75px;
-    height: 180px;
+    height: 200px;
     z-index: 9999;
 }
     .header-menu li {
@@ -144,7 +143,15 @@ display: none;
 .int-img {
 display: none;
 }
-
+.slick-active>a>img {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+     opacity: 1 !important; 
+}
 }
 
 @media only screen and (max-width: 1080px) {
@@ -501,7 +508,6 @@ img.advantage-candibober {
     font-family: 'Open Sans', sans-serif;
 }
 .slider2-slide {
-    background-image: url(../img/slide2sl.png);
     height: 165px;
     background-size: 70%;
 }

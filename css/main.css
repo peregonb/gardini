@@ -361,8 +361,11 @@ a {
     font-weight: 400;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
-
+h2{
+    margin: 0;
+}
 img.service-candibober {
     height: 31px;
     width: 100%;
